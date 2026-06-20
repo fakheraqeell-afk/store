@@ -520,6 +520,11 @@ ul li i:hover{
     border-radius: 10px;
 
 }
+.expectation-top-h2{
+    font-size: 40px;
+    
+}
+
 
 .expectation-container{
     margin-top: 40px;
@@ -565,6 +570,13 @@ ul li i:hover{
     transform: scale(1.1);
 }
 
+.cus{
+    font-size: 40px;
+}
+
+.cus i{
+    font-size: 40px;
+}
 
 
 .why-box{
@@ -725,4 +737,313 @@ ul li i:hover{
     color: gray;
 }
 
+
+/*MEDIA QUERY ("MOBLES")*/
+
+@media (max-width : 600px) {
+ .topinfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 15px;
+    width: 100%;
+    height: 40px;
+ }
+
+ .serach{
+    width: 100%;
+    height: 250px;
+}
+.serach-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    
+}
+
+.serach-img{
+    width: 80px;
+    height: 50px;
+    padding-bottom: 10px;
+}
+
+.input-serach{
+    display: flex;
+    border: 1px solid black;
+
+    font-size: 20px;
+}
+
+.select{
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+.nav{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    position: relative;
+}
+
+
+.nav ul{
+    display: flex;
+    justify-content: space-evenly  ;
+    align-items: center;
+   padding-top: 10px;
+   font-size: 15px;
+}
+
+.navicons{
+    padding-top: 10px;
+}
+
+.navicons ul li i{
+    font-size: 15px;
+}
+
+.hero-info{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 40%;
+    font-size: 20px;
+    color: white;
+    
+    
+    z-index: 2;
+}
+
+
+
+.container{
+  margin-top: 50px;
+  
+   
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.img{
+    position: relative;
+      border: .5px solid black;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: gray;
+    
+}
+
+.img img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.category{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.186);
+}
+
+.cat-container{
+    margin-top: 50px;
+}
+
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   gap: 10px;
+   
+}
+
+.cards-info{
+    text-align: center;
+    padding: 20px;
+    font-size: 5px;
+    gap: 60px;
+    position: relative;
+    cursor: pointer;
+    width: 300px;
+}
+
+
+.men-category{
+    width: 100%;
+    height: 1500px;
+}
+
+.men-h1{
+    text-align: center;
+    font-size: 15px;
+}
+
+.line1{
+    background-color: white;
+}
+
+.men-container{
+    margin-top: 20px;
+    
+}
+
+.small-img{
+    padding-top: 20px;
+}
+
+.men-boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+    align-items: center;
+    
+}
+
+.women-category{
+    width: 100%;
+    height: 1400px;
+}
+.women-h1{
+    text-align: center;
+    font-size: 15px;
+}
+
+.women-container{
+     margin-top: 10px;
+}
+
+.women-boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+    align-items: center;
+}
+
+.expectation{
+    width: 100%;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.875);
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    
+
+}
+
+.expectation-top{
+    font-size: 10px;
+}
+
+.expectation-top-h2{
+    font-size: 10px;
+    
+}
+
+
+
+.expectation-container{
+    margin-top: 15px;
+}
+
+.expectaion-box1 span svg{
+    width: 10px;
+    height: 10px;
+}
+.expectaion-box2 span svg{
+    width: 10px;
+    height: 10px;
+}
+
+.why{
+    height: 500px;
+}
+
+.why-container{
+    margin: auto;
+    width: 70%;
+    padding: 70px 40px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    border-radius: 50px;
+    cursor: pointer;
+     box-shadow: 1px  2px 2px rgba(0, 0, 0, 0.307);
+    
+}
+
+.cus{
+    font-size: 20px;
+}
+
+.cus i{
+    font-size: 20px;
+}
+
+
+.featured{
+    height: 3500px;
+    margin: auto;
+}
+
+.featured h1{
+    text-align: center;
+    font-size: 20px;
+}
+
+.featured-text{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.featured-text{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.featured-text ul li{
+    cursor: pointer;
+    font-size: 15px;
+    color: gray;
+}
+
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(128, 128, 128, 0.253);
+}
+
+.footer-container{
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    color: gray;
+    font-size: 10px;
+}
+
+} 
 
