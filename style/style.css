@@ -196,8 +196,6 @@ ul li i:hover{
     position: relative;
     
     height: 100vh;
-    
-    
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5); 
@@ -439,10 +437,21 @@ ul li i:hover{
     height: 400px;
 }
 
-.big-img{
-    position: relative;
+.men-h1{
+    text-align: center;
+    padding-top: 20px;
 }
 
+.big-img{
+    position: relative;
+    
+}
+
+.big-img img{
+    width: 600px;
+    height: 400px;
+
+}
 .big-img::before{
     position: absolute;
     content: '';
@@ -500,6 +509,17 @@ ul li i:hover{
     height: 600px;
 }
 
+.big-img{
+    position: relative;
+    
+}
+
+.big-img img{
+    width: 600px;
+    height: 400px;
+
+}
+
 .women-container{
      margin-top: 40px;
 }
@@ -511,6 +531,11 @@ ul li i:hover{
     height: 400px;
 }
 
+.women-h1{
+    text-align: center;
+    padding-top: 10px;
+}
+
 /*EXPECTATION----------------------------- */
 .expectation{
     width: 100%;
@@ -520,6 +545,13 @@ ul li i:hover{
     border-radius: 10px;
 
 }
+
+.expectation-top{
+    margin-left: 138px;
+    padding-top: 50px;
+}
+
+
 .expectation-top-h2{
     font-size: 40px;
     
@@ -741,6 +773,16 @@ ul li i:hover{
 /*MEDIA QUERY ("MOBLES")*/
 
 @media (max-width : 600px) {
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    flex-wrap: wrap;
+}
  .topinfo{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -751,7 +793,7 @@ ul li i:hover{
 
  .serach{
     width: 100%;
-    height: 250px;
+    height: 200px;
 }
 .serach-info{
     display: flex;
@@ -773,6 +815,8 @@ ul li i:hover{
     border: 1px solid black;
 
     font-size: 20px;
+
+    display: none;
 }
 
 .select{
@@ -782,19 +826,21 @@ ul li i:hover{
 }
 
 .nav{
-    width: 100%;
+   /* width: 100%;
     height: 70px;
     background-color: black;
-    position: relative;
+    position: relative;*/
+    display: none;
+    
 }
 
 
 .nav ul{
     display: flex;
-    justify-content: space-evenly  ;
+   
     align-items: center;
    padding-top: 10px;
-   font-size: 15px;
+   font-size: 10px;
 }
 
 .navicons{
@@ -804,6 +850,16 @@ ul li i:hover{
 .navicons ul li i{
     font-size: 15px;
 }
+
+.hero{
+    position: relative;
+    height: 230px;
+    margin: auto;
+    width: 99%;
+    background-size: contain;
+   
+}
+
 
 .hero-info{
     
@@ -815,9 +871,13 @@ ul li i:hover{
     width: 40%;
     font-size: 20px;
     color: white;
-    
+    font-size: 12px;
     
     z-index: 2;
+}
+
+.hero-info img{
+    display: none;
 }
 
 
@@ -855,7 +915,7 @@ ul li i:hover{
 .category{
     margin-top: 50px;
     width: 100%;
-    height: auto;
+    height: 1900px;
     background-color: rgba(128, 128, 128, 0.186);
 }
 
@@ -868,24 +928,28 @@ ul li i:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-   gap: 10px;
+   gap: 8px;
    
 }
 
 .cards-info{
     text-align: center;
-    padding: 20px;
-    font-size: 5px;
-    gap: 60px;
+    padding: 10px;
+    font-size: 12px;
+    gap: 20px;
     position: relative;
     cursor: pointer;
-    width: 300px;
+    width: 250px;
+}
+
+.cards-info:hover{
+    transform: scale(1);
 }
 
 
 .men-category{
     width: 100%;
-    height: 1500px;
+    height: 1200px;
 }
 
 .men-h1{
@@ -900,6 +964,29 @@ ul li i:hover{
 .men-container{
     margin-top: 20px;
     
+}
+
+.big-img{
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+
+.big-img img{
+    margin: auto;
+    height: 230px;
+    width: 100%;
+    text-align: center;
+}
+
+.big-img-info{
+    font-size: 15px;
+}
+
+.big-img-info button{
+    padding: 10px;
+    font-size: 15px;
 }
 
 .small-img{
@@ -917,11 +1004,19 @@ ul li i:hover{
 
 .women-category{
     width: 100%;
-    height: 1400px;
+    height: 1200px;
 }
 .women-h1{
     text-align: center;
     font-size: 15px;
+}
+
+.big-img-women{
+
+   margin: auto;
+    height: 230px;
+    width: 100%;
+    text-align: center;
 }
 
 .women-container{
@@ -936,20 +1031,27 @@ ul li i:hover{
     align-items: center;
 }
 
+
+
 .expectation{
-    width: 100%;
-    height: 450px;
+    width: 90%;
+    
+    margin: auto;
+    height: 300px;
     background-color: rgba(0, 0, 0, 0.875);
     color: white;
-    font-size: 15px;
-    border-radius: 10px;
-    
+    font-size: 10px;
+   
+    padding: 20px;
 
 }
 
 .expectation-top{
     font-size: 10px;
+    margin-left: 60px;
+    padding-top: 25px;
 }
+
 
 .expectation-top-h2{
     font-size: 10px;
@@ -972,19 +1074,20 @@ ul li i:hover{
 }
 
 .why{
-    height: 500px;
+    height: 400px;
+    margin-top: -20px;
 }
 
 .why-container{
     margin: auto;
-    width: 70%;
-    padding: 70px 40px;
+    width: 80%;
+    padding: 25px 20px;
     margin-top: 100px;
     text-align: center;
-    font-size: 15px;
+    font-size: 5px;
     border: 1px solid rgba(0, 0, 0, 0.185);
     border-radius: 50px;
-    cursor: pointer;
+    height: auto;
      box-shadow: 1px  2px 2px rgba(0, 0, 0, 0.307);
     
 }
@@ -1033,16 +1136,24 @@ ul li i:hover{
 
 .footer{
     width: 100%;
-    height: 300px;
+    margin: auto;
+    height: auto;
     background-color: rgba(128, 128, 128, 0.253);
 }
 
 .footer-container{
-    padding-top: 60px;
+    padding-top: 20px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     color: gray;
     font-size: 10px;
+    text-align: center;
+}
+
+.footer-container-h1{
+    padding-top: 10px;
+    font-size: 15px;
 }
 
 } 
